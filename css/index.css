@@ -1,0 +1,147 @@
+  /* Remove margens padrão do navegador */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilo do corpo da página - igual ao login */
+    body {
+      font-family: 'NotoSans', sans-serif;
+      height: 100vh;
+      background-color: #201b2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #fff;
+    }
+
+    /* Container principal - mesmo estilo do login */
+    .container {
+      background: #2f2841;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      padding: 60px 40px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      color: #fff;
+    }
+
+    /* Logo igual ao login */
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00ff88;
+      margin-bottom: 20px;
+    }
+
+    .brand::before {
+      content: "🧠";
+      margin-right: 8px;
+    }
+
+    /* Título principal */
+    .titulo {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    /* Subtítulo */
+    .subtitulo {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #aaa;
+    }
+
+    /* Container dos botões */
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    /* Estilo dos botões - igual ao btn-login */
+    .botao {
+      background: #00ff88;
+      color: #2b134b;
+      border: none;
+      border-radius: 10px;
+      padding: 14px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0px 8px 16px -6px #00ff8052;
+      text-decoration: none;
+      width: 100%;
+      display: inline-block;
+    }
+
+    /* Efeito hover nos botões - igual ao login */
+    .botao:hover {
+      background: #00e676;
+      transform: translateY(-2px);
+    }
+
+    /* Segundo botão com estilo diferente */
+    .botao.secundario {
+      background: #514869;
+      color: #fff;
+      box-shadow: 0px 4px 10px #00000040;
+    }
+
+    .botao.secundario:hover {
+      background: #5a4f73;
+      transform: translateY(-2px);
+    }
+
+    /* Seção de recursos */
+    .recursos {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #514869;
+    }
+
+    .recursos h3 {
+      color: #00ff88;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .lista-recursos {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    .recurso {
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    .recurso-icone {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    /* Responsividade para celulares */
+    @media (max-width: 480px) {
+      .container {
+        padding: 40px 30px;
+        margin: 20px;
+      }
+      
+      .titulo {
+        font-size: 1.8rem;
+      }
+      
+      .botao {
+        padding: 12px;
+        font-size: 0.95rem;
+      }
+    }

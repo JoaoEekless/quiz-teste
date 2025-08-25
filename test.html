@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizify</title>
+    <style>
+      /* ======= RESET ======= */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #0a0f2c, #121835);
+        color: #fff;
+        line-height: 1.6;
+      }
+
+      /* ======= NAVBAR ======= */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 10%;
+      }
+      nav .logo {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #4db5ff;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #ddd;
+        transition: 0.3s;
+      }
+      nav ul li a:hover {
+        color: #4db5ff;
+      }
+
+      /* ======= HERO ======= */
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 10%;
+        min-height: 80vh;
+      }
+      .hero-text {
+        max-width: 500px;
+      }
+      .hero-text h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .hero-text p {
+        font-size: 1rem;
+        color: #aaa;
+        margin-bottom: 2rem;
+      }
+
+      /* ======= BOTÕES ======= */
+      .btn-group {
+        display: flex;
+        gap: 1rem;
+      }
+      .btn {
+        padding: 0.9rem 1.8rem;
+        border: none;
+        border-radius: 50px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .btn-primary {
+        background: #4db5ff;
+        color: #fff;
+      }
+      .btn-primary:hover {
+        background: #399fe0;
+      }
+      .btn-secondary {
+        background: transparent;
+        border: 2px solid #4db5ff;
+        color: #4db5ff;
+      }
+      .btn-secondary:hover {
+        background: #4db5ff;
+        color: #fff;
+      }
+
+      /* ======= HERO IMAGE ======= */
+      .hero-img {
+        width: 400px;
+        height: 300px;
+        background: linear-gradient(135deg, #4db5ff55, #4db5ff22);
+        border-radius: 15px;
+        border: 2px solid #4db5ff33;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: #4db5ff;
+      }
+
+      @media (max-width: 900px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+        }
+        .hero-img {
+          margin-top: 2rem;
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">Quizify</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Como Funciona</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          Desafie sua mente com o <span style="color: #4db5ff">Quizify</span>
+        </h1>
+        <p>
+          Teste seus conhecimentos de forma divertida e descubra até onde vai
+          sua inteligência!
+        </p>
+        <div class="btn-group">
+          <button class="btn btn-primary">Começar Agora</button>
+          <button class="btn btn-secondary">Saiba Mais</button>
+        </div>
+      </div>
+      <div class="hero-img">Espaço para imagem/ilustração</div>
+    </section>
+  </body>
+</html>

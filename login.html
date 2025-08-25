@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/registro.css" />
+  <link rel="icon" type="image/svg+xml" href="img/cerebro1.svg" />
+  <title>Quizify</title>
+</head>
+
+<body>
+  <div class="main-login">
+    <div class="login-box">
+      <div class="brand">Quizify</div>
+
+      <h1>Faça seu login</h1>
+      <p class="subtitle"></p>
+
+      <form class="card-login" action="login.php" method="POST">
+        <div class="textfield">
+          <label for="login">Usuário ou E-mail</label>
+          <input type="text" id="login" name="login" placeholder="user@gmail.com" required />
+        </div>
+        <div class="textfield">
+          <label for="ds_password">Senha</label>
+          <input type="password" id="ds_password" name="ds_password" placeholder="••••••••••••" required />
+        </div>
+
+        <button class="btn-login" type="submit">Entrar</button>
+
+        <div class="signup-link">
+          Não tem uma conta? <a href="cadastro.php">Registre-se</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
